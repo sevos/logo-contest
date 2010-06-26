@@ -1,0 +1,16 @@
+# PostgreSQL. Versions 7.4 and 8.x are supported.
+development: &defaults
+  adapter: postgresql
+  encoding: unicode
+  database: invoices_development
+  pool: 5
+  username: invoices
+  password: 
+
+test:
+  <<: *defaults
+  database: invoices_test
+
+production:
+  <<: *defaults
+  database: invoices_production
