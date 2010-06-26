@@ -1,0 +1,2 @@
+bundle install --relock && rake db:drop:all db:create:all db:migrate && rake
+echo "Environment ready!"
