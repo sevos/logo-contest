@@ -5,7 +5,7 @@ module I18n
         def store_default_translation(locale, key, interpolations)
           translation = ActiveRecord::Translation.new :locale => locale.to_s, 
                                                       :key => key,
-                                                      :value => "#{locale}, #{key}"
+                                                      :value => "#{key} (#{locale.to_s})"
           translation.interpolations = interpolations
           translation.save
         end
