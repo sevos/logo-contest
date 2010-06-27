@@ -1,3 +1,20 @@
+== Sevos's Rails 2.3.8 application scaffold ==
+
+  After clone:
+    * install bundler (gem install bundler)
+    * configure database.yml
+      the best practice is to allow configured user to create databases
+    * run script/setup
+
+  Features:
+    * Haml included
+    * Rspec installed
+    * Formtastic installed
+    * I18n Translations support
+      * ActiveRecord backend activated
+      * simple gui for managing translations
+      * Polish pluralization support
+
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create 
