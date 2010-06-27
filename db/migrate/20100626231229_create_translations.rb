@@ -6,6 +6,8 @@ class CreateTranslations < ActiveRecord::Migration
       t.text   :value
       t.text   :interpolations
       t.boolean :is_proc, :default => false
+      
+      t.timestamps
     end
   end
 
