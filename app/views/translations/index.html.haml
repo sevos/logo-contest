@@ -11,7 +11,7 @@
       %th
       %th
     - @translations.each do |translation|
-      %tr
+      %tr{:class => (translation.translated? ? "translated" : "require_translation")}
         %td= translation.locale
         %td= translation.key
         %td= translation.value

@@ -1,0 +1,6 @@
+table#translations tr.require_translation td {
+  font-weight: bold; }
+table#translations tr.translated td {
+  color: green; }
+table#translations a {
+  font-weight: normal; }

@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(:version => 20100626231229) do
     t.text     "value"
     t.text     "interpolations"
     t.boolean  "is_proc",        :default => false
+    t.boolean  "translated",     :default => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
