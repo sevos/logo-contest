@@ -1,6 +1,6 @@
 %h1= t("Translations")
 %ul.actions
-  %li= link_to t("Clean translations"), clean_translations_path, :method => "delete", :confirm => t("Do you really want to remove all non-translated translations")
+  %li= link_to t("Clean translations"), clean_administration_translations_path, :method => "delete", :confirm => t("Do you really want to remove all non-translated translations")
 - if @translations.empty?
   %p= t("There are no translations yet")
 - else
@@ -17,5 +17,5 @@
         %td= translation.locale
         %td= translation.key
         %td= translation.value
-        %td= link_to t("Edit"), edit_translation_path(translation)
-        %td= link_to t("Destroy"), translation_path(translation), :method => "delete"
+        %td= link_to t("Edit"), edit_administration_translation_path(translation)
+        %td= link_to t("Destroy"), administration_translation_path(translation), :method => "delete"
