@@ -1,3 +1,5 @@
 - semantic_form_for [:administration, @translation] do |f|
+  - if @current_locale
+    = hidden_field_tag :locale, @current_locale
   = f.inputs :key, :value
   = f.buttons :commit
