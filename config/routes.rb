@@ -4,8 +4,6 @@ ActionController::Routing::Routes.draw do |map|
   end
   map.resources :customers
 
-  map.resources :translations, :collection => {:clean => :delete}
-
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
