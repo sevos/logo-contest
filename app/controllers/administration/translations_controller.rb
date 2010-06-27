@@ -9,7 +9,7 @@ class Administration::TranslationsController < Administration::ApplicationContro
 
   def clean
     Translation.not_translated.for_locale(params[:locale]).destroy_all
-    redirect_to administration_translations_path(params[:locale])
+    redirect_to administration_translations_path(:locale => params[:locale])
   end
 
   private

@@ -1,6 +1,13 @@
-table#translations tr.require_translation td {
-  font-weight: bold; }
-table#translations tr.translated td {
-  color: green; }
-table#translations a {
-  font-weight: normal; }
+ul#locales {
+  display: inline;
+  list-style: none; }
+  ul#locales li {
+    display: inline; }
+    ul#locales li a.current {
+      text-decoration: underline; }
+
+table#translations {
+  witdh: 600px;
+  min-width: 600px; }
+  table#translations tr.translated td {
+    color: green; }
