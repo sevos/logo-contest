@@ -1,13 +1,13 @@
 --- 
 dependencies: 
-  pg: 
-    group: 
-    - :default
-    version: = 0.9.0
   rails: 
     group: 
     - :default
     version: = 2.3.8
+  pg: 
+    group: 
+    - :default
+    version: = 0.9.0
   haml: 
     group: 
     - :default
@@ -32,6 +32,10 @@ dependencies:
     group: 
     - :test
     version: = 1.2.4
+  i18n: 
+    group: 
+    - :default
+    version: = 0.4.1
 specs: 
 - rake: 
     version: 0.8.7
@@ -53,6 +57,8 @@ specs:
     version: 0.9.10
 - haml: 
     version: 2.2.20
+- i18n: 
+    version: 0.4.1
 - pg: 
     version: 0.9.0
 - rails: 
@@ -63,7 +69,7 @@ specs:
     version: 1.3.0
 - rspec-rails: 
     version: 1.3.2
-hash: 299d2e9e7b25f545d8651ea78a379283ae4eccc4
+hash: c93fc9d925e5256d51c421b484a920d482adb5c2
 sources: 
 - Rubygems: 
     uri: http://gemcutter.org

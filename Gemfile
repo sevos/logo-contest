@@ -8,6 +8,7 @@ gem "haml", "2.2.20"
 gem "resource_controller", "0.6.6"
 gem "formtastic", "0.9.10"
 
+gem "i18n", "0.4.1"
 group :test do
   gem 'rspec', '1.3.0'
   gem 'rspec-rails', '1.3.2'

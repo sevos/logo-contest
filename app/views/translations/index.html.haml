@@ -1,0 +1,19 @@
+%h1= t("Translations")
+- if @translations.empty?
+  %p= t("There are no translations yet")
+- else
+  %p= t("{{count}} translations found", :count => @translations.count)
+  %table#translations
+    %tr
+      %th= t("Locale")
+      %th= t("Key")
+      %th= t("Value")
+      %th
+      %th
+    - @translations.each do |translation|
+      %tr
+        %td= translation.locale
+        %td= translation.key
+        %td= translation.value
+        %td= link_to t("Edit"), edit_translation_path(translation)
+        %td= link_to t("Delete"), translation_path(translation), :method => "delete"
