@@ -1,4 +1,6 @@
 %h1= t("Translations")
+%ul.actions
+  %li= link_to t("Clean translations"), clean_translations_path, :method => "delete", :confirm => t("Do you really want to remove all non-translated translations")
 - if @translations.empty?
   %p= t("There are no translations yet")
 - else
