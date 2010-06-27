@@ -3,7 +3,7 @@ source "http://gems.github.com"
 
 gem "rails", "2.3.8"
 gem "pg", "0.9.0"
-gem "haml", "2.2.20"
+gem "haml", "3.0.13"
 
 gem "resource_controller", "0.6.6"
 gem "formtastic", "0.9.10"
