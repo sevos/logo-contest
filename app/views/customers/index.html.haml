@@ -1,0 +1,20 @@
+%h1= t("My customers")
+
+%ul.actions
+  %li= link_to t('New customer'), new_customer_path
+
+%table#customers
+  %tr
+    %th= t("Name")
+    %th= t("Nip")
+    %th= t("Address")
+    %th= t("Edit")
+    %th= t("Destroy")
+
+- @customers.each do |customer|
+  %tr
+    %td=h customer.name 
+    %td=h customer.nip
+    %td=h customer.address
+    %td= link_to t('Edit'), edit_customer_path(customer)
+    %td= link_to t('Destroy'), customer, :confirm => t("Do you really want to remove %{name}?", :name => customer.name), :method => :delete

@@ -2,6 +2,9 @@ ActionController::Routing::Routes.draw do |map|
   map.namespace :administration do |administration|
     administration.resources :translations, :collection => {:clean => :delete}    
   end
+  map.resources :customers
+
+  map.resources :translations, :collection => {:clean => :delete}
 
   # The priority is based upon order of creation: first created -> highest priority.
 
