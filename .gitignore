@@ -1,6 +1,6 @@
 *~
 .DS_Store
-config/*.yml
+config/database.yml
 tmp/**/*
 log/*
 .bundle
