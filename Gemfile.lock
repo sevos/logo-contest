@@ -7,7 +7,7 @@ dependencies:
   sqlite3-ruby: 
     group: 
     - :default
-    version: = 1.3.0
+    version: = 1.2.5
     require: 
     - sqlite3
   haml: 
@@ -78,10 +78,10 @@ specs:
 - rspec-rails: 
     version: 1.3.2
 - sqlite3-ruby: 
-    version: 1.3.0
+    version: 1.2.5
 - thin: 
     version: 1.2.7
-hash: 9084d0cb237680ced3dbebb05f071dc02a2b1e6f
+hash: d3ce22a451ac4c091115b034033e802c6862cc61
 sources: 
 - Rubygems: 
     uri: http://gemcutter.org
