@@ -26,8 +26,7 @@ memcache_options = {
   :readonly => false,
   :urlencode => false
 }
-CACHE = MemCache.new(memcache_options)
-CACHE.servers = '127.0.0.1:11211'
+CACHE = MemCache.new('127.0.0.1:11211', memcache_options)
 config.cache_store = CACHE
 
 
