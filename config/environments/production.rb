@@ -16,7 +16,20 @@ config.log_level = :debug
 # config.logger = SyslogLogger.new
 
 # Use a different cache store in production
-config.cache_store = :mem_cache_store, "localhost"
+#config.cache_store = :mem_cache_store, "localhost"
+require 'memcache'
+memcache_options = {
+  :c_threshold = 10_00,
+  :compression = true,
+  :debug = false,
+  :namespace = 'logo-contest',
+  :readonly = false,
+  :urlencode = false
+}
+CACHE = MemCache.new(memcache_options)
+CACHE.servers = '127.0.0.1:11211'
+config.cache_store = CACHE
+
 
 # Enable serving of images, stylesheets, and javascripts from an asset server
 # config.action_controller.asset_host = "http://assets.example.com"
