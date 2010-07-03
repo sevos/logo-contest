@@ -18,8 +18,7 @@ config.log_level = :debug
 # Use a different cache store in production
 #config.cache_store = :mem_cache_store, "localhost"
 require 'memcache'
-CACHE = MemCache.new('127.0.0.1:11211')
-config.cache_store = CACHE
+config.cache_store = :mem_cache_store
 
 
 # Enable serving of images, stylesheets, and javascripts from an asset server
