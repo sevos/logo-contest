@@ -19,12 +19,12 @@ config.log_level = :debug
 #config.cache_store = :mem_cache_store, "localhost"
 require 'memcache'
 memcache_options = {
-  :c_threshold = 10_00,
-  :compression = true,
-  :debug = false,
-  :namespace = 'logo-contest',
-  :readonly = false,
-  :urlencode = false
+  :c_threshold => 10_00,
+  :compression => true,
+  :debug => false,
+  :namespace => 'logo-contest',
+  :readonly => false,
+  :urlencode => false
 }
 CACHE = MemCache.new(memcache_options)
 CACHE.servers = '127.0.0.1:11211'
