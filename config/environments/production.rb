@@ -16,8 +16,8 @@ config.action_view.cache_template_loading            = true
 # config.logger = SyslogLogger.new
 
 # Use a different cache store in production
-require 'memcache-client'
-config.cache_store = :mem_cache_store, 'localhost:11211'
+
+config.cache_store = :mem_cache_store, MemChache.new('localhost:11211')
 
 # Enable serving of images, stylesheets, and javascripts from an asset server
 # config.action_controller.asset_host = "http://assets.example.com"
