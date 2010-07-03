@@ -21,7 +21,6 @@ require 'memcache'
 memcache_options = {
   :c_threshold => 10_00,
   :compression => true,
-  :debug => false,
   :namespace => 'logo-contest',
   :readonly => false,
   :urlencode => false
