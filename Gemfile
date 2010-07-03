@@ -10,6 +10,7 @@ gem "formtastic", "0.9.10"
 gem "i18n", "0.4.1"
 
 gem "thin", "1.2.7"
+gem "memcache-client", "1.7.4"
 
 group :developmend do
   # gem "mongrel", "1.1.5"

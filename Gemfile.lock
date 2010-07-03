@@ -4,16 +4,20 @@ dependencies:
     group: 
     - :default
     version: = 2.3.8
+  haml: 
+    group: 
+    - :default
+    version: = 3.0.13
   sqlite3-ruby: 
     group: 
     - :default
     version: = 1.2.5
     require: 
     - sqlite3
-  haml: 
+  memcache-client: 
     group: 
     - :default
-    version: = 3.0.13
+    version: = 1.7.4
   rspec: 
     group: 
     - :test
@@ -22,14 +26,14 @@ dependencies:
     group: 
     - :default
     version: = 0.6.6
-  formtastic: 
-    group: 
-    - :default
-    version: = 0.9.10
   thin: 
     group: 
     - :default
     version: = 1.2.7
+  formtastic: 
+    group: 
+    - :default
+    version: = 0.9.10
   rspec-rails: 
     group: 
     - :test
@@ -69,6 +73,8 @@ specs:
     version: 3.0.13
 - i18n: 
     version: 0.4.1
+- memcache-client: 
+    version: 1.7.4
 - rails: 
     version: 2.3.8
 - resource_controller: 
@@ -81,7 +87,7 @@ specs:
     version: 1.2.5
 - thin: 
     version: 1.2.7
-hash: d3ce22a451ac4c091115b034033e802c6862cc61
+hash: 697ef6bf936f48284e824a565bc6a2f54307faf3
 sources: 
 - Rubygems: 
     uri: http://gemcutter.org
