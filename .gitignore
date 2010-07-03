@@ -4,3 +4,4 @@ config/*.yml
 tmp/**/*
 log/*
 .bundle
+db/*.sqlite3
