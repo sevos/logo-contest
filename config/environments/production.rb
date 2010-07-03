@@ -18,14 +18,7 @@ config.log_level = :debug
 # Use a different cache store in production
 #config.cache_store = :mem_cache_store, "localhost"
 require 'memcache'
-memcache_options = {
-  :c_threshold => 10_00,
-  :compression => true,
-  :namespace => 'logo-contest',
-  :readonly => false,
-  :urlencode => false
-}
-CACHE = MemCache.new('127.0.0.1:11211', memcache_options)
+CACHE = MemCache.new('127.0.0.1:11211')
 config.cache_store = CACHE
 
 
