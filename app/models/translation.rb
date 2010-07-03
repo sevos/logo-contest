@@ -1,8 +1,10 @@
 class Translation < ActiveRecord::Base
+  include I18n::Backend::Cache
+  
   default_scope :order => "created_at DESC"
   before_update { |r| r.translated = true }
-  after_save { Translation.invalidate_cache }
-  after_destroy { Translation.invalidate_cache }
+  after_save { I18n.cache_invalidate! }
+  after_destroy { I18n.cache_invalidate! }
 
   named_scope :not_translated, :conditions => {:translated => false}
   named_scope :for_locale, lambda { |locale|
@@ -14,12 +16,6 @@ class Translation < ActiveRecord::Base
       {}
     end
   }
-
-  def self.invalidate_cache
-    if cache_store = I18n.cache_store
-      cache_store.delete_matched(/i18n-.*/)
-    end
-  end
 
   def self.available_locales
     self.scoped(:select => "DISTINCT locale", :order => "locale ASC").map(&:locale)

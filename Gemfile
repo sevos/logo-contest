@@ -7,7 +7,7 @@ gem "haml", "3.0.13"
 
 gem "resource_controller", "0.6.6"
 gem "formtastic", "0.9.10"
-gem "i18n", "0.4.1"
+gem "i18n", :git => "git://github.com/sevos/i18n.git"
 
 gem "thin", "1.2.7"
 gem "memcache-client", "1.7.8", :require => 'memcache'

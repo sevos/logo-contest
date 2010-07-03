@@ -51,7 +51,7 @@ dependencies:
   i18n: 
     group: 
     - :default
-    version: = 0.4.1
+    version: ">= 0"
 specs: 
 - rake: 
     version: 0.8.7
@@ -79,6 +79,7 @@ specs:
     version: 3.0.13
 - i18n: 
     version: 0.4.1
+    source: 0
 - memcache-client: 
     version: 1.7.8
 - rails: 
@@ -95,8 +96,12 @@ specs:
     version: "1.0"
 - thin: 
     version: 1.2.7
-hash: 5fe8362456bea8f71da3b2b5507e39581e416e1f
+hash: 87c337cbbdd7377983f2cbb6108f82bda5b99664
 sources: 
+- Git: 
+    uri: git://github.com/sevos/i18n.git
+    git: git://github.com/sevos/i18n.git
+    ref: fe2c783aa80eee1ff10ec35d7672d2579794d456
 - Rubygems: 
     uri: http://gemcutter.org
 - Rubygems: 
