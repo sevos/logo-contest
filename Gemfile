@@ -11,10 +11,8 @@ gem "i18n", "0.4.1"
 
 gem "thin", "1.2.7"
 gem "memcache-client", "1.7.8", :require => 'memcache'
+gem "system_timer", "1.0"
 
-group :developmend do
-  # gem "mongrel", "1.1.5"
-end
 
 group :test do
   gem 'rspec', '1.3.0'
