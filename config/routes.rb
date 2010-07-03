@@ -3,7 +3,7 @@ ActionController::Routing::Routes.draw do |map|
     administration.resources :translations, :collection => {:clean => :delete}    
   end
 
-
+  map.root "administration/translations"
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
