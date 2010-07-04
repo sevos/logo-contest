@@ -1,0 +1,7 @@
+- content_for :header do
+  %h2= t("Login admin")
+
+- form_tag administration_session_path, :method => "post" do |f|
+  = t("Password")
+  = password_field_tag :password
+  = submit_tag t("Login")

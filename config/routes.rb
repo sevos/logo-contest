@@ -2,6 +2,9 @@ ActionController::Routing::Routes.draw do |map|
   map.namespace :administration do |administration|
     administration.resources :translations, :collection => {:clean => :delete}    
     administration.resources :logos
+    administration.resource :session, :controller => "Session"
+    administration.login 'login', :controller => 'session', :action => 'new'
+    administration.logout 'logout', :controller => 'session', :action => 'destroy'
   end
   map.resources :logos, :member => {:vote => :post}
 
