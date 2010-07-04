@@ -823,24 +823,21 @@ ul.actions li a:hover {
 }
 /* line 57, ../../../app/stylesheets/administration.sass */
 #administration table {
-  display: inline;
-  float: left;
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 940px;
+  width: 100%;
+  min-width: 100%;
 }
-/* line 59, ../../../app/stylesheets/administration.sass */
+/* line 61, ../../../app/stylesheets/administration.sass */
 #administration th {
   background-color: grey;
   color: white;
 }
-/* line 62, ../../../app/stylesheets/administration.sass */
+/* line 64, ../../../app/stylesheets/administration.sass */
 #administration table, #administration td, #administration th {
   border: 1px solid black;
   border-collapse: collapse;
   padding: 3px;
 }
-/* line 66, ../../../app/stylesheets/administration.sass */
+/* line 68, ../../../app/stylesheets/administration.sass */
 #administration table tr.odd td, #administration td tr.odd td, #administration th tr.odd td {
   background-color: silver;
 }
