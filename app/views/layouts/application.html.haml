@@ -1,6 +1,29 @@
 %html
   %head
     = formtastic_stylesheet_link_tag
-    = stylesheet_link_tag "application"
+    = stylesheet_link_tag 'compiled/application.css'
+    
+    %title= t("EAX's Logo contest")
+    
   %body
-    = yield
+    #body
+      #header
+        #title
+          %h1 EAX Artur Roszczyk
+        #address
+          %h1 Kontakt
+          %dl
+            %dt Telefon
+            %dd +48 500223570
+            %dt E-mail
+            %dd= link_to "kontakt@eax.pl", "mailto:kontakt@eax.pl"
+      #menu
+        %ul
+          %li= link_to "Konkurs", "index.html"
+          %li= link_to "EAX.pl", "http://eax.pl/"
+
+      #content
+        = yield
+      #footer
+        %address
+          == Copyright #{Time.now.year} &copy; by EAX

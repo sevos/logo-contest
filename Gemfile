@@ -13,6 +13,8 @@ gem "thin", "1.2.7"
 gem "memcache-client", "1.7.8", :require => 'memcache'
 gem "system_timer", "1.0"
 
+gem "compass", "0.10.2"
+gem "compass-960-plugin", "0.9.13"
 
 group :test do
   gem 'rspec', '1.3.0'

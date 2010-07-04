@@ -1,5 +1,9 @@
 --- 
 dependencies: 
+  compass: 
+    group: 
+    - :default
+    version: = 0.10.2
   rails: 
     group: 
     - :default
@@ -52,6 +56,10 @@ dependencies:
     group: 
     - :default
     version: ">= 0"
+  compass-960-plugin: 
+    group: 
+    - :default
+    version: = 0.9.13
 specs: 
 - rake: 
     version: 0.8.7
@@ -67,6 +75,12 @@ specs:
     version: 2.3.8
 - activeresource: 
     version: 2.3.8
+- haml: 
+    version: 3.0.13
+- compass: 
+    version: 0.10.2
+- compass-960-plugin: 
+    version: 0.9.13
 - daemons: 
     version: 1.1.0
 - eventmachine: 
@@ -75,8 +89,6 @@ specs:
     version: 1.2.4
 - formtastic: 
     version: 0.9.10
-- haml: 
-    version: 3.0.13
 - i18n: 
     version: 0.4.1
     source: 0
@@ -96,7 +108,7 @@ specs:
     version: "1.0"
 - thin: 
     version: 1.2.7
-hash: 87c337cbbdd7377983f2cbb6108f82bda5b99664
+hash: d57c4f7c805d5d5fd92a5f54306789796b6539fa
 sources: 
 - Git: 
     uri: git://github.com/sevos/i18n.git

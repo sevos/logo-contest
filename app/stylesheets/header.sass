@@ -1,0 +1,47 @@
+#header
+  border:
+    left: 1px solid black
+    bottom: 1px solid black
+  margin-bottom: 2px
+  
+  
+  #title
+    +grid-prefix(1,16)
+    +grid(6,16)
+    +alpha
+    h1
+      margin-top: 15px
+      font:
+        family: Arial Black
+        size: 20pt
+        wieght: bold
+
+  #address
+    +grid-prefix(4,16)
+    +grid(5,16)
+    +omega
+    +clearfix
+    margin-top: 10px
+    h1
+      font:
+        size: 12px
+        weight: bold
+      margin: 0px
+
+    dl
+      width: 160px
+      font:
+        size: 11px
+      margin: 0px
+      dt,dd
+        width: 80px
+        margin: 0
+      dt
+        float: left
+      dd
+        float: right
+        
+    a
+      text-decoration: none
+      color: black
+      font-weight: bold
