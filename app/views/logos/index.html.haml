@@ -16,4 +16,4 @@
       %tr
         %td=h logo.name
         %td= image_tag(logo.image.url)
-        %td ...
+        %td= button_to t("Vote!"), vote_logo_path(logo)

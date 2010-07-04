@@ -1,0 +1,4 @@
+%h1= t("Thanks for your vote")
+
+%p= t("You voted for '%{name}' logo:", :name => @logo.name)
+%p= image_tag @logo.image.url
