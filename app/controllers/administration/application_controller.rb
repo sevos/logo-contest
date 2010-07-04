@@ -18,7 +18,7 @@ class Administration::ApplicationController < ::ApplicationController
   def authorize
     unless admin?
       flash[:error] = t("Unatuhorized access")
-      redirect_to logos_path
+      redirect_to administration_login_path
       false
     end    
   end
