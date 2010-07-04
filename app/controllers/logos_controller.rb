@@ -3,7 +3,12 @@ class LogosController < ApplicationController
   actions :index
 
   def vote
-    object.vote!
-    redirect_to logos_path
+    unless cookies[:voted_logo_id]
+      object.vote!
+      cookies[:voted_logo_id] = object.id
+      redirect_to logos_path
+    else
+      redirect_to logo_path(cookies[:voted_logo_id])
+    end
   end
 end
