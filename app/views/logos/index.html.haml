@@ -1,18 +1,19 @@
 %h1= t("Survey")
 
-%p= t("Welcome text")
+#survey
+  %p= t("Welcome text")
+  %p= t("Instruction")
 
-%p= t("Instruction")
-
-%table
-  %tr
-    %th= t("Font name")
-    %th= t("Logo")
-    %th= t("Votes count")
-    %th= t("Vote!")
-  - @logos.each do |logo|
+  %table
     %tr
-      %td=h logo.name
-      %td= image_tag(logo.url)
-      %td= logo.votes_count
-      %td ...
+      %th= t("Font name")
+      %th= t("Logo")
+      %th= t("Vote!")
+    %tr
+      %td.spacer
+
+    - @logos.each do |logo|
+      %tr
+        %td=h logo.name
+        %td= image_tag(logo.url)
+        %td ...
