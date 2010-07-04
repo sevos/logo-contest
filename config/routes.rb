@@ -4,7 +4,7 @@ ActionController::Routing::Routes.draw do |map|
   end
   map.resources :logos, :member => {:vote => :post}
 
-  map.root "logos#index"
+  map.root :controller => "Logos", :action => "index"
   # map.root :controller => "Administration::Translations", :action => "index"
   
   # The priority is based upon order of creation: first created -> highest priority.
