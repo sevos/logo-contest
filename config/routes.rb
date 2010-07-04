@@ -2,7 +2,9 @@ ActionController::Routing::Routes.draw do |map|
   map.namespace :administration do |administration|
     administration.resources :translations, :collection => {:clean => :delete}    
   end
+  map.resources :logos, :member => {:vote => :post}
 
+  map.root "logos#index"
   # map.root :controller => "Administration::Translations", :action => "index"
   
   # The priority is based upon order of creation: first created -> highest priority.
