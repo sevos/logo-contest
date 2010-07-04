@@ -19,8 +19,8 @@
             %dd= link_to "kontakt@eax.pl", "mailto:kontakt@eax.pl"
       #menu
         %ul
-          %li= link_to "Konkurs", "index.html"
-          %li= link_to "EAX.pl", "http://eax.pl/"
+          %li= link_to t("Contest"), logos_path
+          %li= link_to t("Back to eax.pl"), "http://eax.pl/"
 
       #content
         = yield
