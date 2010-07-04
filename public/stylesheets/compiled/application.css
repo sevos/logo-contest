@@ -936,26 +936,9 @@ fieldset {
   font-weight: bold;
   text-align: center;
 }
-/* line 30, ../../../app/stylesheets/application.sass */
-#content blockquote {
-  margin: 10px 30px;
-  padding: 5px 15px 5px 20px;
-  border-left: 10px solid silver;
-  border-right: 10px solid silver;
-}
-/* line 33, ../../../app/stylesheets/application.sass */
-#content blockquote p:last-child {
-  margin-bottom: 0px;
-}
-/* line 39, ../../../app/stylesheets/application.sass */
-#content pre {
-  margin: 10px 30px;
-  padding: 10px 20px 30px 20px;
-  font-family: "Courier New", courier;
-  border: 3px dotted grey;
-  background-color: silver;
-}
-/* line 46, ../../../app/stylesheets/application.sass */
-#content pre.single {
-  padding-bottom: 10px;
+
+/* line 31, ../../../app/stylesheets/application.sass */
+#your_vote p, #your_vote img {
+  text-align: center;
+  margin: 0px auto;
 }
