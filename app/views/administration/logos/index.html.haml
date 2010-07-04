@@ -14,8 +14,6 @@
       %th
     - @logos.each do |logo|
       %tr
-        %td.spacer
-      %tr
         %td=h logo.name
         %td=image_tag logo.image.url
         %td= logo.votes_count
