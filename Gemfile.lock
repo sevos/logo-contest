@@ -101,7 +101,7 @@ sources:
 - Git: 
     uri: git://github.com/sevos/i18n.git
     git: git://github.com/sevos/i18n.git
-    ref: fe2c783aa80eee1ff10ec35d7672d2579794d456
+    ref: 2aa07054e9add0c1d0af70100b4c09fccec332b1
 - Rubygems: 
     uri: http://gemcutter.org
 - Rubygems: 
