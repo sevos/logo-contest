@@ -1,0 +1,15 @@
+@import grid.scss
+
+ul#locales
+  +grid-prefix(3,16)
+  list-style: none
+  li
+    display: inline
+    a.current
+      text-decoration: underline
+
+#translations
+  table
+    tr.translated td
+      color: green
+  ul#locales

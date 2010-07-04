@@ -1,0 +1,6 @@
+- content_for :header do
+  %h2= t("Edit")
+  %ul.actions
+    %li= link_to t("Back to index"), administration_logos_path
+
+= render 'form'

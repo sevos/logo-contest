@@ -1,8 +1,9 @@
 %html
   %head
     = formtastic_stylesheet_link_tag
-    = stylesheet_link_tag "translations", "administration"
+    = stylesheet_link_tag "compiled/translations", "compiled/administration"
   %body
     %h1= t("Administration / #{@current_controller.capitalize}")
+    = yield :header
     #administration
       = yield

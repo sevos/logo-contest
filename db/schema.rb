@@ -9,14 +9,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100704002628) do
+ActiveRecord::Schema.define(:version => 20100704102530) do
 
   create_table "logos", :force => true do |t|
     t.string   "name"
-    t.text     "url"
     t.integer  "votes_count"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
   end
 
   create_table "translations", :force => true do |t|

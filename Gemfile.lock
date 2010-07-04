@@ -4,30 +4,30 @@ dependencies:
     group: 
     - :default
     version: = 0.10.2
-  rails: 
-    group: 
-    - :default
-    version: = 2.3.8
   system_timer: 
     group: 
     - :default
     version: = 1.0
-  memcache-client: 
+  rails: 
     group: 
     - :default
-    version: = 1.7.8
-    require: 
-    - memcache
+    version: = 2.3.8
+  haml: 
+    group: 
+    - :default
+    version: = 3.0.13
   sqlite3-ruby: 
     group: 
     - :default
     version: = 1.2.5
     require: 
     - sqlite3
-  haml: 
+  memcache-client: 
     group: 
     - :default
-    version: = 3.0.13
+    version: = 1.7.8
+    require: 
+    - memcache
   rspec: 
     group: 
     - :test
@@ -36,14 +36,14 @@ dependencies:
     group: 
     - :default
     version: = 0.6.6
-  formtastic: 
-    group: 
-    - :default
-    version: = 0.9.10
   thin: 
     group: 
     - :default
     version: = 1.2.7
+  formtastic: 
+    group: 
+    - :default
+    version: = 0.9.10
   rspec-rails: 
     group: 
     - :test
@@ -52,14 +52,18 @@ dependencies:
     group: 
     - :test
     version: = 1.2.4
-  i18n: 
+  paperclip: 
     group: 
     - :default
-    version: ">= 0"
+    version: = 2.3.3
   compass-960-plugin: 
     group: 
     - :default
     version: = 0.9.13
+  i18n: 
+    group: 
+    - :default
+    version: ">= 0"
 specs: 
 - rake: 
     version: 0.8.7
@@ -94,6 +98,8 @@ specs:
     source: 0
 - memcache-client: 
     version: 1.7.8
+- paperclip: 
+    version: 2.3.3
 - rails: 
     version: 2.3.8
 - resource_controller: 
@@ -108,7 +114,7 @@ specs:
     version: "1.0"
 - thin: 
     version: 1.2.7
-hash: d57c4f7c805d5d5fd92a5f54306789796b6539fa
+hash: 8c53d3bc722da8e44bf73cce0dfd94ee297342da
 sources: 
 - Git: 
     uri: git://github.com/sevos/i18n.git

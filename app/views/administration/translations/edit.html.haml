@@ -1,6 +1,7 @@
-%h2= t("Edit")
-%ul.actions
-  %li= link_to t("Back to index"), administration_translations_path(:locale => @current_locale)
+- content_for :header do
+  %h2= t("Edit")
+  %ul.actions
+    %li= link_to t("Back to index"), administration_translations_path(:locale => @current_locale)
 
 - semantic_form_for [:administration, @translation] do |f|
   - if @current_locale

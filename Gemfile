@@ -16,6 +16,8 @@ gem "system_timer", "1.0"
 gem "compass", "0.10.2"
 gem "compass-960-plugin", "0.9.13"
 
+gem "paperclip", "2.3.3"
+
 group :test do
   gem 'rspec', '1.3.0'
   gem 'rspec-rails', '1.3.2'

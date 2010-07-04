@@ -1,6 +1,7 @@
-%h2= t("Index")
-%ul.actions
-  %li= link_to t("Clean translations"), clean_administration_translations_path(:locale => @current_locale), :method => "delete", :confirm => t("Do you really want to remove all non-translated translations")
+- content_for :header do
+  %h2= t("Index")
+  %ul.actions
+    %li= link_to t("Clean translations"), clean_administration_translations_path(:locale => @current_locale), :method => "delete", :confirm => t("Do you really want to remove all non-translated translations")
 
 %p
   = t("Available locales are:")
@@ -14,17 +15,18 @@
   %p= t("There are no translations yet")
 - else
   %p= t("%{count} translations found", :count => @translations.count)
-  %table#translations
-    %tr
-      %th= t("Locale")
-      %th= t("Key")
-      %th= t("Value")
-      %th
-      %th
-    - @translations.each do |translation|
-      %tr{:class => ("#{(translation.translated? ? "translated" : "require_translation")} #{cycle("even", "odd")}")}
-        %td= translation.locale
-        %td= translation.key
-        %td= truncate(translation.value, 40)
-        %td= link_to t("Edit"), edit_administration_translation_path(translation, :locale => @current_locale)
-        %td= link_to t("Destroy"), administration_translation_path(translation), :method => "delete"
+  #translations
+    %table
+      %tr
+        %th= t("Locale")
+        %th= t("Key")
+        %th= t("Value")
+        %th
+        %th
+      - @translations.each do |translation|
+        %tr{:class => ("#{(translation.translated? ? "translated" : "require_translation")} #{cycle("even", "odd")}")}
+          %td= translation.locale
+          %td= translation.key
+          %td= truncate(translation.value, 40)
+          %td= link_to t("Edit"), edit_administration_translation_path(translation, :locale => @current_locale)
+          %td= link_to t("Destroy"), administration_translation_path(translation), :method => "delete"

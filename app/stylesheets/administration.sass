@@ -1,0 +1,68 @@
+@import grid.scss
+@import text.scss
+@import _clearfix.sass
+
+body
+  margin: 0
+
+h1, h2
+  padding:
+    left: 10px
+  background-color: grey
+  color: white
+  font-family: Tahoma
+  margin: 0
+
+ul.actions
+  margin: 
+    top: 0
+    left: 0
+    right: 0
+    bottom: 10px
+  padding:
+    left: 10px
+    top: 5px
+    bottom: 5px
+  background-color: grey
+  display: block
+  list-style: none
+  li
+    display: inline
+    
+    a
+      margin: 10px
+      color: white
+      text-decoration: none
+      font-weight: bold
+      &:hover
+        background-color: black
+
+
+#administration
+  +grid-system(16)
+  +clearfix
+  +grid-children
+      
+
+  font-family: Tahoma
+  a
+    text-decoration: none
+    color: blue
+    &:hover
+      color: red
+
+  p
+    +grid-prefix(2,16)
+
+  table
+    +grid(16,16)
+  th
+    background-color: grey
+    color: white
+  table, td, th
+    border: 1px solid black
+    border-collapse: collapse
+    padding: 3px
+    tr.odd td
+      background-color: silver
+    

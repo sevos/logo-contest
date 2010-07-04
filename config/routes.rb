@@ -1,6 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
   map.namespace :administration do |administration|
     administration.resources :translations, :collection => {:clean => :delete}    
+    administration.resources :logos
   end
   map.resources :logos, :member => {:vote => :post}
 
