@@ -1,4 +1,4 @@
-%h1= t("the winner is ... '%{name}' logo:", :name => @winner.name)
+%h1= t("the winner is ... '%{name}' with %{count} votes", :name => @winner.name, :count => @winner.votes_count)
 #your_vote
   %p= image_tag @winner.image.url
   %p= t("Thanks for your vote")
