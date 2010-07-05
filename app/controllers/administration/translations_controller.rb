@@ -12,6 +12,10 @@ class Administration::TranslationsController < Administration::ApplicationContro
     redirect_to administration_translations_path(:locale => params[:locale])
   end
 
+  def index
+    render collection
+  end
+
   private
     def collection
       @collection ||= if params[:locale]

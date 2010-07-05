@@ -1,23 +1,23 @@
 /*
-Syntax error: Undefined mixin 'grid-prefix'.
-        on line 9 of /Users/sevos/Projects/logo-contest/app/stylesheets/header.sass, in `grid-prefix'
-        from line 9 of /Users/sevos/Projects/logo-contest/app/stylesheets/header.sass
+Syntax error: Undefined mixin 'grid'.
+        on line 10 of /Users/sevos/Projects/logo-contest/app/stylesheets/header.sass, in `grid'
+        from line 10 of /Users/sevos/Projects/logo-contest/app/stylesheets/header.sass
 
-4:     bottom: 1px solid black
 5:   margin-bottom: 2px
 6:   
 7:   
 8:   #title
-9:     +grid-prefix(1,16)
-10:     +grid(6,16)
-11:     +alpha
-12:     h1
-13:       margin-top: 15px
-14:       font:
+9:     margin-top: 11px
+10:     +grid(11,16)
+11:     +grid-children
+12:     +alpha
+13:     #logo
+14:       +alpha
+15:       +grid(4,16)
 
 Backtrace:
-/Users/sevos/Projects/logo-contest/app/stylesheets/header.sass:9:in `grid-prefix'
-/Users/sevos/Projects/logo-contest/app/stylesheets/header.sass:9
+/Users/sevos/Projects/logo-contest/app/stylesheets/header.sass:10:in `grid'
+/Users/sevos/Projects/logo-contest/app/stylesheets/header.sass:10
 /Users/sevos/.rvm/gems/ree-1.8.7-2010.01@grads/gems/haml-3.0.13/lib/sass/tree/mixin_node.rb:74:in `perform!'
 /Users/sevos/.rvm/gems/ree-1.8.7-2010.01@grads/gems/haml-3.0.13/lib/sass/tree/node.rb:301:in `_perform'
 /Users/sevos/.rvm/gems/ree-1.8.7-2010.01@grads/gems/haml-3.0.13/lib/sass/tree/node.rb:209:in `perform'
@@ -89,4 +89,4 @@ script/server:3
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'grid-prefix'.\A         on line 9 of /Users/sevos/Projects/logo-contest/app/stylesheets/header.sass, in `grid-prefix'\A         from line 9 of /Users/sevos/Projects/logo-contest/app/stylesheets/header.sass\A \A 4:     bottom: 1px solid black\A 5:   margin-bottom: 2px\A 6:   \A 7:   \A 8:   #title\A 9:     +grid-prefix(1,16)\A 10:     +grid(6,16)\A 11:     +alpha\A 12:     h1\A 13:       margin-top: 15px\A 14:       font:"; }
+  content: "Syntax error: Undefined mixin 'grid'.\A         on line 10 of /Users/sevos/Projects/logo-contest/app/stylesheets/header.sass, in `grid'\A         from line 10 of /Users/sevos/Projects/logo-contest/app/stylesheets/header.sass\A \A 5:   margin-bottom: 2px\A 6:   \A 7:   \A 8:   #title\A 9:     margin-top: 11px\A 10:     +grid(11,16)\A 11:     +grid-children\A 12:     +alpha\A 13:     #logo\A 14:       +alpha\A 15:       +grid(4,16)"; }
