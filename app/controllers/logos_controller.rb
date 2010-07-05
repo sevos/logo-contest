@@ -1,7 +1,7 @@
 class LogosController < ApplicationController
   resource_controller
-  actions :index, :show, :vote
-  before_filter :check_if_not_voted, :except => [:show]
+  actions :index, :show, :vote, :winner
+  before_filter :check_if_not_voted, :except => [:show, :winner]
 
   def vote
     object.vote!
@@ -9,6 +9,11 @@ class LogosController < ApplicationController
     
     redirect_to logo_path(object)
   end
+
+  def winner
+    @winner = Logo.find(:first, :order => "votes_count DESC")
+  end
+
   
   private
   def check_if_not_voted

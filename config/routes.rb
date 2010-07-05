@@ -6,9 +6,8 @@ ActionController::Routing::Routes.draw do |map|
     administration.login 'login', :controller => 'session', :action => 'new'
     administration.logout 'logout', :controller => 'session', :action => 'destroy'
   end
-  map.resources :logos, :member => {:vote => :post}
-
-  map.root :controller => "Logos", :action => "index"
+  map.resources :logos, :member => {:vote => :post}, :collection => {:winner => :get}
+  map.root :controller => "Logos", :action => "winner"
   # map.root :controller => "Administration::Translations", :action => "index"
   
   # The priority is based upon order of creation: first created -> highest priority.
