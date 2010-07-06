@@ -7,5 +7,5 @@ max_persistent_conns: 512
 chdir: /home/sevos/apps/logo-contest
 environment: production
 servers: 1
-address: 0.0.0.0
+address: 127.0.0.1
 daemonize: true
