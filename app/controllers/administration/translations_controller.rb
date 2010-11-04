@@ -13,7 +13,7 @@ class Administration::TranslationsController < Administration::ApplicationContro
   end
 
   def index
-    render collection
+    @translations = collection
   end
 
   private
